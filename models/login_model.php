@@ -12,7 +12,7 @@ class Login_Model extends Model {
 		$sth->execute();
 
 		$count = $sth->rowCount();
-		if ($count > 0){
+		if ($count === 1){
 			Session::init();
 			Session::set('loggedIn', true);
 			Session::set('username', $_POST['username']);

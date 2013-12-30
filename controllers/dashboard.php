@@ -16,7 +16,11 @@ class Dashboard extends Controller {
 		$this->view->item = 'dashboard';
 		$this->view->render('dashboard/index');
 	}
-
+        
+        function run(){
+		$this->model->run();
+	}
+        
 	function logout(){
 		Session::destroy();
 		header('location: '.URL);
