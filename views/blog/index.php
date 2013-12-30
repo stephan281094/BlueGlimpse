@@ -4,10 +4,16 @@
 			<div class="eleven cell">
 				<div class="bg block">
 					<div class="title">
-						Christmas
+						Happy new year!
 					</div>
 					<div class="content">
-						Blablabla
+						<p>
+							We would like to wish everybody all the best for the year 2014.
+						</p>
+						<p>
+							The year 2014 is going to be an amazing year for us. We hope to make this website
+							fully functional, so that it can be used by more and more people.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -17,7 +23,7 @@
 						Popular Blogs
 					</div>
 					<div class="content">
-						Blablabla
+						No content available yet
 					</div>
 				</div>
 			</div>

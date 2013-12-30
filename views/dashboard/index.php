@@ -2,7 +2,12 @@
 	<div class="bg grid">
 		<div class="sixteen cell">
 			<div class="bg block">
-				This is the dashboard page.
+				<div class="title">
+					Hooray!
+				</div>
+				<div class="content">
+					You are now logged in, <?php echo Session::get('username'); ?>!
+				</div>
 			</div>
 		</div>
 	</div>

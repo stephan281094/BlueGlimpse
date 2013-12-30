@@ -6,13 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/main.css">
 </head>
 <body>
-	<?php Session::init(); ?>
 	<div class="bg header noselect section">
-		<?php if (Session::get('loggedIn') == true):?>
-			<a href="<?php echo URL; ?>dashboard" class="logo item">
-		<?php else: ?>
 			<a href="<?php echo URL; ?>." class="logo item">
-		<?php endif; ?>
 			<span class="blue">Blue</span>
 			<span class="purple">Glimpse</span>
 		</a>

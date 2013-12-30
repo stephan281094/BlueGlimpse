@@ -15,9 +15,10 @@ class Login_Model extends Model {
 		if ($count > 0){
 			Session::init();
 			Session::set('loggedIn', true);
-			header('location: ../dashboard');
+			Session::set('username', $_POST['username']);
+			header('location: ' . URL . '.');
 		}else{
-			header('location: ../login');
+			header('location: ' . URL . 'login');
 		}
 	}
 }	

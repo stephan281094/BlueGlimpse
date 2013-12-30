@@ -7,7 +7,12 @@ class Index extends Controller {
 	
 	function index() {
 		$this->view->item = 'index';
-		$this->view->render('index/index');
+		
+		if(Session::get('loggedIn') == true){
+			$this->view->render('dashboard/index');
+		}else{
+			$this->view->render('index/index');
+		}
 	}
 	
 	function details() {
