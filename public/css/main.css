@@ -67,6 +67,8 @@ a:visited {
     color: #555;
     cursor: pointer;
     background-color: white;
+	
+	transition: color 0.2s ease;
 }
 
 .bg.header .active.item {
@@ -75,12 +77,10 @@ a:visited {
 
 .bg.header .item:hover {
     color: #00a2ff;
-    /*box-shadow: inset 0px -1px 0px 0px #08f;*/
 }
 
 .bg.header .item:active {
     padding-top: 1px;
-    /*box-shadow: inset 0px 0px 0px 0px #08f;*/
 }
 
 .bg.header > .logo {
@@ -182,10 +182,15 @@ span.blue {color: #0088ff;}
 	border-radius: 3px;
 	outline: 0;
 	-webkit-appearance: none;
+	
+	transition: border-left-width 0.2s ease;
 }
 
 .bg.field input.rounded:focus {
+	transition: border-color 0.5s ease;
+	transition: border-left-width 0.2s ease;
 	border-color: #08f;
+	border-left: 5px solid #08f;
 }
 
 
@@ -197,9 +202,10 @@ span.blue {color: #0088ff;}
 	line-height: 38px;
 	padding: 0 10px;
 	background-color: #f0f0f0;
-	border-radius: 2px;
+	/*border-radius: 2px;*/
 	border: 1px solid rgba(0, 0, 0, 0.05);
-	box-shadow: inset 0px 2px 1px -1px rgba(255, 255, 255, 0.5), 0px 4px 1px -3px rgba(0, 0, 0, 0.2);
+	/*box-shadow: inset 0px 2px 1px -1px rgba(255, 255, 255, 0.5), 0px 4px 1px -3px rgba(0, 0, 0, 0.2);*/
+	box-shadow: inset 0px 3px 0px -1px rgba(255, 255, 255, 0.5), 0px 4px 0px -3px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 
 	-webkit-user-select: none;  
