@@ -201,26 +201,31 @@ span.blue {color: #0088ff;}
 	height: 40px;
 	line-height: 38px;
 	padding: 0 10px;
-	background-color: #f0f0f0;
-	/*border-radius: 2px;*/
+	background-color: #fff;
+	font-size: 12pt;
+	border-radius: 2px;
 	border: 1px solid rgba(0, 0, 0, 0.05);
-	/*box-shadow: inset 0px 2px 1px -1px rgba(255, 255, 255, 0.5), 0px 4px 1px -3px rgba(0, 0, 0, 0.2);*/
-	box-shadow: inset 0px 3px 0px -1px rgba(255, 255, 255, 0.5), 0px 4px 0px -3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 4px 1px -3px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 
 	-webkit-user-select: none;  
        -moz-user-select: none;    
         -ms-user-select: none;
              user-select: none;
+			 
+	-webkit-appearance: none;
+	outline: none;
+	
+	transition: box-shadow 0.4s ease;
 }
 
 .bg.button:hover {
-	box-shadow: inset 0px 2px 1px -1px rgba(255, 255, 255, 0.8), 0px 4px 1px -3px rgba(0, 0, 0, 0.2);
-
+	box-shadow: 0px 4px 1px -3px rgba(0, 0, 0, 0.4);
 }
 
 .bg.button:active {
-	padding-top: 1px;
+	margin-top: 1px;
+	height: 39px;
 	box-shadow: inset 0px 3px 1px -1px rgba(0, 0, 0, 0.2), 0px 3px 1px -3px rgba(0, 0, 0, 0.2);
 }
 
@@ -246,15 +251,10 @@ span.blue {color: #0088ff;}
 	cursor: pointer;
 }
 
-/*.bg.menu.button:hover {
-	box-shadow: inset 0px 2px 1px -1px rgba(255, 255, 255, 0.8), 0px 4px 1px -3px rgba(0, 0, 0, 0.2);
-}*/
-
-/*.bg.menu.button:active {
-	padding-top: 1px;
-	box-shadow: inset 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 3px 1px -3px rgba(0, 0, 0, 0.2);
-}*/
-
+/*/ Colored buttons /*/
+.bg.blue.button:hover {
+	background: #0088ff !important;
+}
 
 /*// Viewports //////////////////////////////////////////////*/
 @media only screen and (max-width: 620px) {
