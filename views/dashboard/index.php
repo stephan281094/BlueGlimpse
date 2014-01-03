@@ -6,7 +6,9 @@
 					Hooray!
 				</div>
 				<div class="content">
-					You are now logged in, <?php echo Session::get('username'); ?>!
+					You are now logged in, <?php echo Session::get('username'); ?>! <br />
+                                        We are really happy to see you here! <br />
+                                        We hope to bring you soon a working dashboard with the latest updates on our website.     
 				</div>
 			</div>
 		</div>
