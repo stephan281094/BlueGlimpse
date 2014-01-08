@@ -15,8 +15,8 @@ class Dashboard extends Controller {
 
     function index() {
         $this->view->item = 'dashboard';
-        $this->view->render('dashboard/index');
         $this->view->overview = $this->model->overview();
+        $this->view->render('dashboard/index');
     }
 
     function logout() {

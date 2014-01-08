@@ -7,7 +7,7 @@ class Dashboard_Model {
     }
     
     public function overview() {
-        $sth = $this->db->prepare("SELECT * FROM posts");
+        $sth = $this->db->prepare("SELECT * FROM posts LEFT JOIN users ON post_by = user_id ORDER BY post_date DESC");
         $sth->execute();
         return $sth->fetchAll();
     }
