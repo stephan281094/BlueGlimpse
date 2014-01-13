@@ -19,7 +19,7 @@
 			<a href="<?php echo URL; ?>blog" data-item="blog" class="item">Blog</a>
 			<a href="<?php echo URL; ?>help" data-item="help" class="item">Help</a>
 			<?php if (Session::get('loggedIn') == true):?>
-				<a href="<?php echo URL; ?>index/logout" data-item="logout" class="right item">Logout</a>
+				<a href="<?php echo URL; ?>index/logout" data-item="logout" class="right item"><?=Session::get('username')?></a>
 			<?php else: ?>
 				<a href="<?php echo URL; ?>login" data-item="login" class="right item">Login</a>
 			<?php endif; ?>
