@@ -1,2 +1,2 @@
 <?php
-define('URL', 'http://stephan.blueglimpse.com/');
+define('URL', 'http://blueglimpse.com/');
