@@ -40,4 +40,6 @@ class Bootstrap {
 		$controller->index();
 		return false;
 	}
+	
+	/* This is a comment xD */
 }	
