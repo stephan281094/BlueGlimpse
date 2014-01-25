@@ -50,7 +50,7 @@ class Bootstrap {
             }
         } elseIf (isset($this->_url[1])) {
             if (method_exists($this->_controller, $this->_url[1])) {
-                $this_controller->{$this->_url[1]}();
+                $this->_controller->{$this->_url[1]}();
             } else {
                 $this->_error();
             }
