@@ -9,8 +9,9 @@ require 'libs/View.php';
 // Library
 require 'libs/Database.php';
 require 'libs/Session.php';
+require 'libs/Hash.php';
 
-require 'config/paths.php';
-require '../../../private/database.php';
+require 'config/constants.php';
+require '../../../private/security.php';
 
 $app = new Bootstrap();
