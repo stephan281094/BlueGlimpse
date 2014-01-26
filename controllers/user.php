@@ -14,7 +14,7 @@ class User extends Controller {
 		if($username != null && $email != null && $password != null){
 			$this->model->create($username, $email, $password);
 		}else{
-			header("location: http://blueglimpse.com/");
+			header("location: ".URL);
 		}
 	}
 }
