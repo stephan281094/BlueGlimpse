@@ -9,17 +9,10 @@ class User extends Controller {
 	public function create(){
 		$username	= $_POST['username'];
 		$email		= $_POST['email'];
-		$password	= md5($_POST['password']);
-		$level;
-		
-		if(isset($_POST['level'])){
-			$level = $_POST['level'];
-		}else{
-			$level = 1;
-		}
+		$password	= Hash::create('md5', $_POST['password']);
 		
 		if($username != null && $email != null && $password != null){
-			$this->model->create($username, $email, $password, $level);
+			$this->model->create($username, $email, $password);
 		}else{
 			header("location: http://blueglimpse.com/");
 		}

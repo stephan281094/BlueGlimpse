@@ -5,15 +5,14 @@ class User_Model extends Model{
 		parent::__construct();
 	}
 	
-	public function create($username, $email, $password, $level){
-		$sth = $this->db->prepare("INSERT into users (`username`, `email`, `password`, `level`) "
-								. "VALUES (:username, :email, :password, :level)");
+	public function create($username, $email, $password){
+		$sth = $this->db->prepare("INSERT into users (`username`, `email`, `password`, `registration_date`) "
+								. "VALUES (:username, :email, :password, CURDATE())");
 		$sth->bindParam(':username', $username);
 		$sth->bindParam(':email', $email);
 		$sth->bindParam(':password', $password);
-		$sth->bindParam(':level', $level);
 		$sth->execute();
 		
-		header("location: http://blueglimpse.com/");
+		header("location: " . URL);
 	}
 }
