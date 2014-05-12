@@ -1,0 +1,60 @@
+.bg.button {
+    position: relative;
+    float: left;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 10px;
+    background-color: #fff;
+    font-size: 12pt;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 1px -3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-appearance: none;
+    outline: none;
+
+    transition: box-shadow 0.4s ease;
+}
+
+.bg.button:hover {
+    box-shadow: 0px 4px 1px -3px rgba(0, 0, 0, 0.4);
+}
+
+.bg.button:active {
+    margin-top: 1px;
+    height: 39px;
+    box-shadow: inset 0px 3px 1px -1px rgba(0, 0, 0, 0.2), 0px 3px 1px -3px rgba(0, 0, 0, 0.2);
+}
+
+.bg.blue.button, .bg.purple.button {color: white;}
+
+.bg.button.fluid {
+    text-align: center;
+    width: 100%;
+}
+
+.bg.menu.button {
+    position: relative;
+    display: none;
+    float: right;
+    margin: 6px;
+    width: 48px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/*/ Colored buttons /*/
+.bg.blue.button:hover {
+    background: #0088ff !important;
+}

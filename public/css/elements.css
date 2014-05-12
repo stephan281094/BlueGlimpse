@@ -1,0 +1,95 @@
+/*// Header //////////////////////////////////////////////////*/
+.bg.header {
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #0f0f0f;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.bg.header .item {
+    position: relative;
+    float: left;
+    height: 49px;
+    margin: 0 10px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+    background-color: white;
+    transition: color 0.2s ease;
+}
+
+.bg.header .active.item {
+    box-shadow: inset 0px -1px 0px 0px #60c;
+}
+
+.bg.header .item:hover {
+    color: #00a2ff;
+}
+
+.bg.header .item:active {
+    padding-top: 1px;
+}
+
+.bg.header > .logo {
+    font-size: 14pt;
+}
+
+
+/*// Blocks /////////////////////////////////////////////////*/
+.bg.block {
+    border-radius: 0px;
+    background-color: white;
+    padding: 15px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 5px 0px -3px rgba(0, 0, 0, 0.05);
+    overflow: auto;
+}
+
+.bg.block .title {
+    color: #555;
+    font-size: 18pt;
+    margin-bottom: 15px;
+}
+
+.bg.block .content {
+    color: #555;
+}
+
+.bg.block .content p {
+    text-align: justify;
+}
+
+.bg.block .content p:not(:first-child) {
+    margin-top: 1.2em;
+}
+
+/*// Colours /////////////////////////////////////////////////*/
+/*- Text   -*/
+span.purple {color: #6600cc;}
+span.blue {color: #0088ff;}
+
+/*- Normal -*/
+.bg.purple {background-color: #6600cc !important;}
+.bg.blue {background-color: #0088ff !important;}
+
+/*- error -*/
+.error {
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    float: left;
+    text-align: center;
+}
+
+.error .text {
+    color: #888;
+    font-size: 40pt;
+    font-weight: bold;
+}

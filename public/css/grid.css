@@ -1,0 +1,39 @@
+.bg.section {
+    padding: 0 13%;
+}
+
+.bg.grid {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.bg.grid .cell {
+    float: left;
+    padding: 10px;
+}
+
+.bg.grid .one.cell 	{width: 6.25%; }
+.bg.grid .two.cell 	{width: 12.5%; }
+.bg.grid .three.cell 	{width: 18.75%;}
+.bg.grid .four.cell 	{width: 25%;   }
+.bg.grid .five.cell 	{width: 31.25%;}
+.bg.grid .six.cell 	{width: 37.5%; }
+.bg.grid .seven.cell 	{width: 43.75%;}
+.bg.grid .eight.cell 	{width: 50%;   }
+.bg.grid .nine.cell 	{width: 56.25%;}
+.bg.grid .ten.cell 	{width: 62.5%; }
+.bg.grid .eleven.cell 	{width: 68.75%;}
+.bg.grid .twelve.cell 	{width: 75%;   }
+.bg.grid .thirteen.cell {width: 81.25%;}
+.bg.grid .fourteen.cell {width: 87.5%; }
+.bg.grid .fifteen.cell 	{width: 93.75%;}
+.bg.grid .sixteen.cell 	{width: 100%;  }
+
+.bg.grid .footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
