@@ -9,7 +9,7 @@
 					<?php foreach($this->overview as $key => $value):?>
 						<div class="bg post block">
 							<div class="header">
-								<div class="title">asdsa</div>
+								<div class="title"><?=$value['post_title']?></div>
 								<div class="date"><?=$value['post_date']?></div>
 								<div class="author"><strong><?=$value['username']?></strong> on </div>
 							</div>

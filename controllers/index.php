@@ -11,7 +11,8 @@ class Index extends Controller {
 		$this->view->item = 'index';
 		
 		if(Session::get('loggedIn') == true){
-			$this->view->overview = $this->model->overview();
+			$this->loadModel('dashboard');
+                        $this->view->overview = $this->model->overview();
 			$this->view->render('dashboard/index');
 		}else{
 			$this->view->render('index/index');
