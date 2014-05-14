@@ -51,3 +51,19 @@
                     </div>
                 </div>
             </div>
+            <div class="five cell">
+                <div class="bg block">
+                    <div class="title">
+                        Update user
+                    </div>
+                    <div class="content">
+                        <form action="index/searchuser" method="post">
+                            <div class="bg field">
+                                <div class="title">Username </div>
+                                <input class="rounded" type="text" name="username" placeholder="Username">
+                            </div>
+                            <input class="bg left blue button" type="submit" value="search">
+                        </form>
+                    </div>
+                </div>
+            </div>

@@ -78,6 +78,7 @@ span.blue {color: #0088ff;}
 /*- Normal -*/
 .bg.purple {background-color: #6600cc !important;}
 .bg.blue {background-color: #0088ff !important;}
+.bg.red {background-color: red !important;}
 
 /*- error -*/
 .error {

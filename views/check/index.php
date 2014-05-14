@@ -6,7 +6,7 @@
             <div class="sixteen cell">
                 <div class="bg block">
                     <div class="title">
-                        <?php echo $this->messagetitle; header("Refresh: 4; URL=../"); ?>
+                        <?php echo $this->messagetitle; header("Refresh: 4; URL=../");; ?>
                     </div>
                 </div>
             </div>

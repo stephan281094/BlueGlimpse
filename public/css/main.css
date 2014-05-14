@@ -32,6 +32,10 @@ a:visited {
     user-select: none;
 }
 
+.hidden {
+    display: none;
+}
+
 .right {
     float: right !important;
 }
