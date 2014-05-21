@@ -29,7 +29,7 @@ class Index_Model extends Model {
         $sth = $this->db->prepare("SELECT id, username, email, registration_date, activated, last_active, level FROM users WHERE username = :username;");
         $sth->bindParam(':username', $username);
         $sth->execute();
-        if($sth->rowcount() == 1){
+        if($sth->rowcount() > 0){
             return $sth->fetchAll();
         }
         else {

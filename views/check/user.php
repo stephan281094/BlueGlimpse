@@ -1,20 +1,21 @@
 <div class="bg section noselect">
     <div class="bg content">
         <div class="bg grid">
+            <?php foreach ($this->output as $key => $value): ?>
             <div class="sixteen cell">
                 <div class="bg block">
                     <div class="title">
-                        <?php echo $this->messagetitle; ?>
+                        <?php echo 'Info about user '.$value['username']; ?>
                     </div>
                     <div class="content">
                         <form action="updateuser" method="post">
-                            <input class="hidden" type="text" name="id" value="<?php echo $this->id; ?>">
+                            <input class="hidden" type="text" name="id" value="<?php echo $value['id']; ?>">
                             <div class="two cell">
                                 <div class="bg field">
                                     <div class="title">
                                         Username: 
                                     </div>
-                                    <input class="rounded" type="text" name="username" value="<?php echo $this->username; ?>">
+                                    <input class="rounded" type="text" name="username" value="<?php echo $value['username']; ?>">
                                 </div>
                             </div>
                             <div class="three cell">
@@ -22,7 +23,7 @@
                                     <div class="title">
                                         Email: 
                                     </div>
-                                    <?php echo $this->email; ?>
+                                    <?php echo $value['email']; ?>
                                 </div>
                             </div>
                             <div class="two cell">
@@ -30,7 +31,7 @@
                                     <div class="title">
                                         Registration date: 
                                     </div>
-                                    <?php echo $this->regdate; ?>
+                                    <?php echo $value['registration_date']; ?>
                                 </div>
                             </div>
                             <div class="one cell">
@@ -38,7 +39,7 @@
                                     <div class="title">
                                         Activated: 
                                     </div>
-                                    <input class="rounded" type="text" name="activated" value="<?php echo $this->activated; ?>">
+                                    <input class="rounded" type="text" name="activated" value="<?php echo $value['activated']; ?>">
                                 </div>
                             </div>
                             <div class="two cell">
@@ -46,7 +47,7 @@
                                     <div class="title">
                                         Last activate: 
                                     </div>
-                                    <?php echo $this->lastactive; ?>
+                                    <?php echo $value['last_active']; ?>
                                 </div>
                             </div>
                             <div class="one cell">
@@ -55,9 +56,9 @@
                                         Level: 
                                     </div>
                                     <select class="rounded" name="level">
-                                        <option value="default" <?php echo ($this->level  == "default" ? "selected='selected'" : "") ?>>default</option>
-                                        <option value="admin" <?php echo ($this->level == "admin" ? "selected='selected'" : "") ?>>admin</option>
-                                        <option value="creator" <?php echo ($this->level == "creator" ? "selected='selected'": "") ?>>creator</option>
+                                        <option value="default" <?php echo ($value['level']  == "default" ? "selected='selected'" : "") ?>>default</option>
+                                        <option value="admin" <?php echo ($value['level'] == "admin" ? "selected='selected'" : "") ?>>admin</option>
+                                        <option value="creator" <?php echo ($value['level'] == "creator" ? "selected='selected'": "") ?>>creator</option>
                                     </select>
                                 </div>
                             </div>
@@ -68,13 +69,14 @@
                         <form action="deleteuser" method="post">
                             <div class="one cell">
                                 <div class="bg field">
-                                    <input class="hidden" type="text" name="id" value="<?php echo $this->id; ?>">
-                                    <input class="hidden" type="text" name="username" value="<?php echo $this->username; ?>">
+                                    <input class="hidden" type="text" name="id" value="<?php echo $value['id']; ?>">
+                                    <input class="hidden" type="text" name="username" value="<?php echo $value['username']; ?>">
                                     <input class="bg left red button" type="submit" value="Delete">
                                 </div>
                             </div>
                         </form>
-                    </div>    
+                    </div> 
                 </div>
             </div>
+            <?php endforeach;?>
         
