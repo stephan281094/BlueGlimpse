@@ -52,6 +52,17 @@ class Index_Model extends Model {
         } 
     }
     
+    function activateuser($id, $username) {
+        $sth = $this->db->prepare("UPDATE users SET activated='1' WHERE id = :id;");
+        $sth->bindParam(':id', $id);
+        $sth->execute();
+        if($sth->rowcount() == 1){
+            return 'User '.$username.' is activated';
+        } else {
+            return 'User '.$username.' is not activated';
+        }
+    }
+    
     function deleteuser($id, $username){
         $sth = $this->db->prepare("DELETE FROM users WHERE id = :id;");
         $sth->bindParam(':id', $id);
@@ -62,5 +73,11 @@ class Index_Model extends Model {
         else {
             return 'User '.$username.' not deleted';
         }
+    }
+    
+    function disabledlist(){
+        $sth = $this->db->prepare("SELECT id, username, activated FROM users WHERE activated = 0");
+        $sth->execute();
+        return $sth->fetchall();
     }
 }

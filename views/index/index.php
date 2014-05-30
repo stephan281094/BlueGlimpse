@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="five cell">
+            <div class="six cell">
                 <div class="bg block">
                     <div class="title">
                         Create user
@@ -64,6 +64,25 @@
                             </div>
                             <input class="bg left blue button" type="submit" value="search">
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="five cell">
+                <div class="bg block">
+                    <div class="title">
+                        Activate user
+                    </div>
+                    <div class="content">
+                        Here is a list of disabled users: <br />
+                        <?php foreach ($this->disabledlist as $key => $value): ?>
+                        <form action="index/activateuser" method ="post">
+                            <?php echo $value['username']; ?>
+                            <input class="hidden" type="text" name="id" value="<?php echo $value['id']; ?>">
+                            <input class="hidden" type="text" name="username" value="<?php echo $value['username']; ?>">
+                            <input class="bg right blue button" type="submit" value="Activate">
+                        </form>
+                        <br /><br />
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
