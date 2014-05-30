@@ -24,18 +24,8 @@ class Index extends Controller {
     function searchuser(){
         $username = ucfirst($_POST['username']); 
         if($this->model->searchuser($username) != 0){
-        $user = $this->model->searchuser($username);
-            foreach ($user as $key => $value) {
-                $this->view->messagetitle = 'Info about user '.$value['username'];
-                $this->view->id = $value['id'];
-                $this->view->username = $value['username'];
-                $this->view->email = $value['email'];
-                $this->view->regdate = $value['registration_date'];
-                $this->view->activated = $value['activated'];
-                $this->view->lastactive = $value['last_active'];
-                $this->view->level = $value['level'];
-                $this->view->render('check/user');
-}
+        $this->view->output = $this->model->searchuser($username);
+        $this->view->render('check/user');
         }
         else {
             $this->view->messagetitle = 'User '.$username.' not found';
