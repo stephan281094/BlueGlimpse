@@ -73,7 +73,7 @@
                         Activate user
                     </div>
                     <div class="content">
-                        Here is a list of disabled users: <br />
+                        Here is a list of disabled users: <br /><br />
                         <?php foreach ($this->disabledlist as $key => $value): ?>
                         <form action="index/activateuser" method ="post">
                             <?php echo $value['username']; ?>

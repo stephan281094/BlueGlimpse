@@ -39,7 +39,10 @@
                                     <div class="title">
                                         Activated: 
                                     </div>
-                                    <input class="rounded" type="text" name="activated" value="<?php echo $value['activated']; ?>">
+                                    <select class="rounded" name="activated">
+                                        <option value="0" <?php echo ($value['activated']  == "0" ? "selected='selected'" : "") ?>>No</option>
+                                        <option value="1" <?php echo ($value['activated'] == "1" ? "selected='selected'" : "") ?>>Yes</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="two cell">
