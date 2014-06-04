@@ -256,6 +256,7 @@ span.blue {color: #0088ff;}
 /*// Posts //////////////////////////////////////////////////*/
 .bg.post.block {
     border-top: 1px solid #08f;
+	margin-bottom: 20px;
 }
 
 .bg.post.block > .header {
