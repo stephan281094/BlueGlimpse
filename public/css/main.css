@@ -170,7 +170,7 @@ span.blue {color: #0088ff;}
     margin-bottom: 3px;
 }
 
-.bg.field input {
+.bg.field .rounded {
     width: 100%;
     padding: 11px 14px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -181,11 +181,11 @@ span.blue {color: #0088ff;}
     transition: box-shadow 0.2s ease;
 }
 
-.bg.field input:hover {
+.bg.field .rounded:hover {
     box-shadow: 0px 0px 1px #08f;
 }
 
-.bg.field input:focus {
+.bg.field .rounded:focus {
     background-color: rgba(0, 0, 0, 0.01);
     box-shadow: 0px 0px 1px #08f;
     border: 1px solid #08f;

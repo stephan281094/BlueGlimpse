@@ -18,6 +18,11 @@ class Dashboard extends Controller {
         $this->view->overview = $this->model->overview();
         $this->view->render('dashboard/index');
     }
+    
+    function post() {
+        $this->model->post();
+        $this->index();
+    }
 
     function logout() {
         Session::destroy();

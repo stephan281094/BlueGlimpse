@@ -4,16 +4,23 @@
 			<div class="eleven cell">
 				<div class="bg block">
 					<div class="title">
-						Happy new year!
+						Congratulations Stephan & Steffanys !
 					</div>
 					<div class="content">
 						<p>
-							We would like to wish everybody all the best for the year 2014.
+                                                    Stephan is one of the makers of this project, and recently married !
 						</p>
 						<p>
-							The year 2014 is going to be an amazing year for us. We hope to make this website
-							fully functional, so that it can be used by more and more people.
+                                                    I already personally congratulated him, but also in this way I wanted to give him a little surprise :P
+                                                    And also for Steffanys this is one of my ways to congratulate her. I already said this but I hope you two get a lifetime of happiness!    
 						</p>
+                                                <p>
+                                                    Greetings your fellow developer, Roy :)
+                                                </p>
+                                                <p>
+                                                    Reading this post and also want to congratulate Stephan and Steffanys? It is now possible to post your own message in our system!
+                                                    So please congratulate them in your own post on our <a href="<?php echo URL; ?>Dashboard">Dashboard</a>, thanks! 
+                                                </p>
 					</div>
 				</div>
 			</div>
