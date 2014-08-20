@@ -39,7 +39,6 @@ a:visited {
     float: right !important;
 }
 
-
 /*// Header //////////////////////////////////////////////////*/
 .bg.header {
     position: relative;
@@ -82,7 +81,31 @@ a:visited {
 .bg.header > .logo {
     font-size: 14pt;
 }
+.bg.header ul {
+    list-style: none;
+}
 
+.bg.header ul ul {
+    display: none;
+}
+
+.bg.header ul li:hover > ul {
+    display: block;
+}
+
+.bg.header ul ul {
+    position: absolute; 
+    top: 100%;
+    right: 13%;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.bg.header ul ul li {
+    float: none; 
+    position: relative;
+}
 
 /*// Section ////////////////////////////////////////////////*/
 .bg.section {
@@ -304,16 +327,32 @@ span.blue {color: #0088ff;}
         width: 100%;
         margin: 0;
     }
+    
+    .bg.header ul ul {
+        position: relative; 
+        width: 100%;
+        right: 0;
+        background-color: white;
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .bg.section {
         padding: 0px !important;
     }
+    
+    .bg.header ul ul {
+        right: 0 !important;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
     .bg.section {
         padding: 0 5%;
+    }
+    
+    .bg.header ul ul {
+        right: 5%;
     }
 }
